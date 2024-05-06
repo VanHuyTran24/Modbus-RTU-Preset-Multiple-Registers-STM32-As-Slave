@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"modbus_ex2\startup_stm32f205xx.o"
+"modbus_ex2\modbus_crc.o"
+"modbus_ex2\modbusslave.o"
+"modbus_ex2\main.o"
+"modbus_ex2\stm32f2xx_it.o"
+"modbus_ex2\stm32f2xx_hal_msp.o"
+"modbus_ex2\stm32f2xx_hal_tim.o"
+"modbus_ex2\stm32f2xx_hal_tim_ex.o"
+"modbus_ex2\stm32f2xx_hal_uart.o"
+"modbus_ex2\stm32f2xx_hal.o"
+"modbus_ex2\stm32f2xx_hal_rcc.o"
+"modbus_ex2\stm32f2xx_hal_rcc_ex.o"
+"modbus_ex2\stm32f2xx_hal_cortex.o"
+"modbus_ex2\stm32f2xx_hal_flash.o"
+"modbus_ex2\stm32f2xx_hal_flash_ex.o"
+"modbus_ex2\stm32f2xx_hal_pwr.o"
+"modbus_ex2\stm32f2xx_hal_pwr_ex.o"
+"modbus_ex2\stm32f2xx_hal_gpio.o"
+"modbus_ex2\stm32f2xx_hal_dma.o"
+"modbus_ex2\stm32f2xx_hal_dma_ex.o"
+"modbus_ex2\stm32f2xx_hal_exti.o"
+"modbus_ex2\system_stm32f2xx.o"
+--strict --scatter "Modbus_ex2\Modbus_ex2.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Modbus_ex2.map" -o Modbus_ex2\Modbus_ex2.axf
